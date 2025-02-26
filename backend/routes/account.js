@@ -40,7 +40,13 @@ router.post("/transfer", authMiddleware, async (req, res) => {
             message: "Invalid account"
         });
     }
-
+    if (typeof amount !== 'number' || isNaN(amount) || amount <= 0) {
+        await session.abortTransaction();
+        return res.status(400).json({
+          message: "Invalid amount"
+        });
+      }
+      
     // Perform the transfer
     await Account.updateOne({ userId: req.userId }, { $inc: { balance: -amount } }).session(session);
     await Account.updateOne({ userId: to }, { $inc: { balance: amount } }).session(session);

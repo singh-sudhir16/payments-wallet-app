@@ -74,6 +74,9 @@ The frontend should now be running (commonly on http://localhost:5173).
 #### POST /api/v1/account/transfer: Transfer funds to another user.
 
 ### Contributing
-#### Contributions are welcome! Please fork the repository and submit a pull request with your improvements or bug fixes. Make sure to test your changes thoroughly before #### submitting.
+### We welcome contributions to enhance this project! To contribute:
 
-This README provides an overview of the project, outlines its features and tech stack
+#### 1. Fork the repository.
+#### 2. Create a new feature branch: git checkout -b my-new-feature.
+#### 3. Commit your changes: git commit -am 'Add some feature'.
+#### 4. Push to the branch: git push origin my-new-feature.

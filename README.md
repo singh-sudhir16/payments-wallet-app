@@ -19,7 +19,6 @@ A full-stack Payment Wallet App that allows users to sign up, sign in, view thei
 
 - [Node.js](https://nodejs.org/) (v14 or later)
 - [npm](https://www.npmjs.com/)
-- [MongoDB](https://www.mongodb.com/) (local instance or hosted service)
 
 ## Setup Instructions
 
